@@ -20,7 +20,7 @@ class Services {
   registerService() {
     this.cacheData = new CacheData();
     this.logger = new Logger();
-    this.security = new Security(this.variables);
+    this.security = new Security(this.variables, this.cacheData);
     this.user = new UserService();
   }
 }
